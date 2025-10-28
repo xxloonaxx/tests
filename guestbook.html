@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gästebuch von Alex Müller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a class="logo" href="index.html">AM</a>
+        <h1>Gästebuch</h1>
+        <p>Teile deine Gedanken, dein Feedback oder eine kurze Grüße – ich freue mich von dir zu lesen!</p>
+    </header>
+
+    <main class="content">
+        <section class="guestbook-form">
+            <h2>Eintrag hinterlassen</h2>
+            <form>
+                <div class="form-field">
+                    <label for="name">Dein Name</label>
+                    <input type="text" id="name" name="name" placeholder="z. B. Maria Schneider" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">E-Mail (optional)</label>
+                    <input type="email" id="email" name="email" placeholder="für eine Antwort">
+                </div>
+                <div class="form-field">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Was möchtest du teilen?" required></textarea>
+                </div>
+                <p class="form-hint">* Dies ist ein Demo-Gästebuch. Formularsendungen sind deaktiviert.</p>
+                <button class="btn primary" type="submit" disabled>Eintrag absenden</button>
+            </form>
+        </section>
+
+        <section class="guestbook-entries">
+            <h2>Stimmen aus der Community</h2>
+            <article class="entry">
+                <h3>Lea Weber</h3>
+                <time datetime="2024-05-10">10. Mai 2024</time>
+                <p>Danke für deinen Workshop zum Thema Storytelling. Unser Team arbeitet seitdem viel zielgerichteter!</p>
+            </article>
+            <article class="entry">
+                <h3>Jonas Fischer</h3>
+                <time datetime="2024-04-28">28. April 2024</time>
+                <p>Dein Newsletter ist jede Woche ein Highlight. Bitte weiter so mit den praktischen Tipps!</p>
+            </article>
+            <article class="entry">
+                <h3>Sofia Nguyen</h3>
+                <time datetime="2024-03-17">17. März 2024</time>
+                <p>Die Podcast-Folge über Remote Leadership hat unser Führungsteam inspiriert, neue Wege zu gehen.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Alex Müller · <a href="index.html">Zur Startseite</a> · <a href="links.html">Link-Portal</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
